@@ -1,13 +1,21 @@
+
 int is_power_of_2(unsigned int n)
 {
-    float tes = n;
-    while (tes)
+    int tes = n, x;
+
+    if (n == 0)
     {
-        tes = tes / 2;
-        if (tes == 2)
-        {
-            return (1);
-        }
+        return (0);
     }
+
+    tes--;
+
+    x = tes & n;
+
+    if (x == 0)
+    {
+        return (1);
+    }
+
     return (0);
 }
