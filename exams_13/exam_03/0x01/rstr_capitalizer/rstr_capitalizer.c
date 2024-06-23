@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 
 void to_buffer(char *buf, char *str)
